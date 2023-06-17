@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <h1>Spring Framework Midterm Assignment</h1>
+    <hr/>
+    <h2>💬 게시글 등록하기</h2>
+    <hr/>
+    </form>
+    <form action="regist" method="post" encType="multipart/form-data">
+        <h3>파일 첨부하기</h3>
+        파일 : <input type="file" name="multiFiles" multiple><br>
+        파일 이름:<input type="text" name="fileName" placeholder="저장할 파일명을 입력하세요."><br>
+        파일 설명 : <input type="text" name="multiFileDescription" placeholder="파일에 대한 설명을 입력하세요." style="width: 200px"><br>
+
+        <h3>제목: <input type="text" name="title" placeholder="제목을 입력하세요." style="width: 200px"><br></h3>
+        <h3>내용: <input type="text" name="content" placeholder="내용을 입력하세요." style="width: 200px; height: 200px"><br></h3>
+        <hr/>
+        <button type="submit" onclick="uploadAndRegister()">등록하기</button>
+    </form>
+</body>
+</html>
